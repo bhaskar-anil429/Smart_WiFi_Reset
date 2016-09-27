@@ -13,12 +13,9 @@ time.sleep(0.5)
 i2c.writeByte(0x41,0x01,0x01)
 while True :
         REMOTE_SERVER = "www.onion.io"
-
         def is_connected():
          try:
-
                 host = socket.gethostbyname(REMOTE_SERVER)
-
                 s = socket.create_connection((host, 80), 2)
                 return True
 
@@ -27,17 +24,13 @@ while True :
          return False
         if is_connected() :
                 print "Connected to the internet...."
-
                 i2c.writeByte(0x41, 0x01, 0x01)
                 time.sleep(1)
         else :
                 print " No internet ...."
                 i2c.writeByte(0x41, 0x01, 0x00)
                 time.sleep(1)
-
                 i2c.writeByte(0x41, 0x01, 0x01)
-
                 time.sleep(60)
-
-
+                
         time.sleep(100)
