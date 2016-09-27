@@ -1,4 +1,4 @@
-this code will use onion omega to check the internet connection and controleverything.com i2c board to reset the router.
+this code will use onion omega to check the internet connection and controleverything.com i2c relay board to reset the router.
 I2C realy board
 https://www.controleverything.com/content/Relay-Controller?sku=PCA9536_I2CR_R11
 
